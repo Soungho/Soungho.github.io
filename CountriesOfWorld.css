@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* Window and Body Styles */
+html {
+    height: 100%;
+    background-color:moccasin;
+}
+
+body {
+    width: 95%;
+    min-width: 640px;
+    max-width: 960px;
+    margin: auto;
+    min-height: 100%;
+    display: block;
+    background-color: moccasin;
+    font-family: Segoe, "Segoe UI", Verdana, "sans-serif";
+
+}
+
+body select {
+    width: 80%;
+}
+
+body fieldset {
+    width: 80%
+}
+
+a, header, li, nav, ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 20px 0px 20px 0px;
+}
+
+
+/* Article Styles */
+figure {
+    display: block;
+    float: right;
+    border-radius: 0.4em;
+    margin: 1em;
+    padding: 1em;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+article {
+    display: block;
+    width: 36%;
+    margin: auto;
+    padding: 1.4em;
+    float: left;
+}
+
+article em {
+    font-variant: small-caps;
+    font-style: normal
+}
+
+
+/* Aside Styles */
+aside.topbar-left {
+    display: block;
+    font-size: 1em;
+    margin:2% 5% 2% 15%;
+    width: 30%;
+    float: left;
+    text-align: left;
+}

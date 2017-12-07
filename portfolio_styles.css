@@ -1,0 +1,170 @@
+﻿@charset "utf-8";
+
+@font-face{
+	font-family:cac_champagne;
+    src: url('cac_champagne.woff') format('woff');
+}
+
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 2
+    Case Problem 4
+    
+    The Great Lakescape Lodge
+    Author: w0411056 Soungho Pahk
+    Date: 2017-10-11   
+
+    Filename: lake_home.html
+*/
+
+/* Header navigation Styles in Header */	
+header {  
+    background-color: purple
+}
+header > nav > ul{
+    list-style-type: none;
+}
+header > nav > ul > li{
+	font-size: 1.2em;
+	font-weight: bold;
+    color: white;
+    color: rgba(245, 245, 245, 0.6); 
+    padding-top: 3px; 
+    padding-bottom:3px; 
+}
+header > nav > ul > li > a:link, nav > ul > li > a:visited{
+    color: lightpink;
+    color: rgba(245, 245, 245, 0.6); 
+    text-decoration: none;
+}
+header > nav > ul > li > a:hover, nav > ul > li > a:active{
+	color: rgb(216, 158, 24); 
+    text-decoration: bold; 
+}
+
+
+/** HTML Styles **/
+html{
+	background-color:rgb(128, 135, 109); 
+}
+
+
+/*Section id=leftcol Styles */
+section#leftcol {
+    background-color:rgb(250, 220, 178);
+}
+
+section#leftcol > h1{
+    font: normal 5em cac_champagne; 
+  	letter-spacing: 0.05em; 
+    padding-left: 10px; 
+}
+section#leftcol > p{
+    font-size:1.2em;    
+    line-height:1.2em;  
+    padding-left: 20px; 
+    padding-right: 10px; 
+}
+
+/* Aside Styles id=note */
+aside#note {
+    background-color:rgb(213, 137, 198); 
+	margin-top: 15px; 
+	padding-left:15px; 
+}
+aside#note > h1 {
+    font-size: 2.0em;   
+    text-align: left-side; 
+}
+aside#note > ul{
+	font-size:1em;
+    line-height:1.5em;
+    padding-left:10px;          
+    padding-right:10px;       
+}
+
+
+/* Aside Styles id=event */
+aside#event {
+    background-color:rgb(240, 184, 106);
+	margin-top: 5px; 
+}
+aside#event > h1 {
+    font-size: 1.5em;
+    text-align: left-side;
+}
+aside#event > h2 {
+    font-size: 1.2em;
+    padding-left:10px;   
+}
+aside#event > p {
+    font-size:1em;   
+    padding-left:20px;
+    padding-right:15px;
+}
+
+
+/*Section id=rightcol Styles */
+section#rightcol {
+    background-color:pink; 
+}
+
+/* Navigation and List Styles in Section id=rightcol */
+section#rightcol > nav {
+    padding-bottom: 80px;    
+}
+
+section#rightcol > nav > h2 {
+    font-size:2.0em;
+	font-family: cac_champagne;  
+    color:purple;    
+    padding-left: 40px;	   
+}
+section#rightcol > nav > ul{
+	font-size:1.3em;
+    list-style-type: none;
+	padding-left: 50px;	
+}
+
+section#rightcol > nav > ul > li > a:link, nav > ul > li > a:visited{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+section#rightcol  > nav > ul > li > a:hover, nav > ul > li > a:active{
+    color: rgb(219, 50, 241);
+    text-decoration: underline;
+}
+
+/* Blockquote Styles in Section id=rightcol */
+section#rightcol > blockquote{
+    color:purple;
+    font-size: 1.4em;
+	line-height:1.5em;
+	quotes: "\201c" "\201D"
+}
+
+section#rightcol > blockquote::before{
+	content:open-quote;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+section#rightcol > blockquote::after{
+	content:close-quote;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+/* Footer Styles */
+footer {
+	background-color: rgb(80, 80, 76);
+	color: white;
+	color: rgba(215, 215, 215, 0.6);
+	font: normal small-caps bold 1.2em/5em; 
+	text-align: right-side;
+	padding-top:12px; 
+    padding-bottom:12px;  
+	padding-left: 50px;
+}
+

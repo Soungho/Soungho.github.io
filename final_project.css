@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Soungho Pahk
+   Date:   2017-10-27
+
+   Filename:         pcg_paper.css
+   Supporting Files: SCREENSHOT_The Park City Gazette.PDF
+
+*/
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent; 
+}
+
+
+/* Window and Body Styles */
+html {
+	height: 100%;
+	background-color: moccasin;
+}
+
+body {
+	width: 95%;
+	min-width: 640px;
+	max-width: 960px;
+	margin: auto;
+	min-height: 100%;
+	display: block;
+	background-color: white;
+	font-family: Segoe, "Segoe UI", Verdana, "sans-serif";
+	
+}
+
+a, header, li, nav, ul {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+p {
+	margin: 20px 0px 20px 0px;
+}
+
+/* Top Link */
+#topbar {
+	text-align: center;
+	margin: auto;
+	background-color: white-space;
+	color: white;
+	position:relative;
+	padding: 0.5em;
+}
+
+#topbar Link {
+	font: normal small-caps 0.9em/0.5em Verdana, "sans-serif";
+}
+
+/* Page Header Styles */
+header > img {
+	display: block;
+	float: right;
+	width: 100%;	
+}
+
+/* Vertical Navigation styles */
+nav.vertical {
+	float: left;
+	padding: 0.2em;
+	width: 17%;
+	background-color: #9ACD32;
+}
+
+nav.vertical ul {
+	margin: 0 0;
+	padding: 1em 2em;
+}
+
+nav.vertical ul li {
+	list-style-type: none;
+	line-height: 2.8em;
+	font-size: 0.8em;
+}
+
+nav.vertical ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav.vertical ul::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* Article Styles */
+figure {
+	display: block;
+	float: right;
+	border-radius: 0.4em;
+	margin: 1em;
+	padding: 1em;
+}
+
+figure figcaption {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+article { 
+	display: block;
+	width: 36%;
+	margin: auto;
+	padding: 1.4em;
+	float: left;
+}
+
+article em {
+	font-variant: small-caps;
+	font-style: normal
+}
+
+article h1 {
+	letter-spacing: 0.2em;
+}
+
+article aside {
+	margin-top: 1em;
+	padding: 1.5em;
+	background-color: #9ACD32;
+	line-height: 1.3em;
+}
+
+article aside h2 {
+	letter-spacing: 0.2em;
+	margin-bottom: 1em;
+}
+
+article aside ul {
+	padding-left: 1em;
+	list-style-type: square;
+	font-size: 0.8em;
+}
+
+section:first-of-type {
+	margin-bottom: 1em;
+}
+
+
+/* Aside Styles */
+aside.topbar-left {
+	display: block;
+	font-size: 1em;
+    margin:2% 5% 2% 15%;
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+
+aside.topbar-right {
+	display: block;
+	font-size: 1em;
+	margin:2% 15% 2% 5%;
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+
+/* Footer Styles */
+footer {
+	clear: both;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	background-color: #342B25;
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#footer {
+	text-align: center;
+	margin: auto;
+	background-color: #808000;
+	color: white;
+	position:relative;
+	padding: 0.5em;
+}
+
+#footer address {
+	font: normal small-caps 0.9em/0.5em Verdana, "sans-serif";
+}
+

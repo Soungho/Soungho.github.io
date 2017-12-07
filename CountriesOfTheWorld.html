@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countries of the world</title>
+    <link href="CountriesOfWorld.css" rel="stylesheet" />
+    <script src="countries.json"></script>
+</head>
+
+<body>
+<header>
+    <div id="topbar">
+        <aside class="topbar-left">
+            <form>
+                <h2>Choose a country from the list </h2></br>
+                    <select id = "countries">
+                        <option value="Choose One">Choose One</option>
+                    </select>
+            </form>
+        </aside>
+ </header>
+
+<article>
+    <section>
+        <form>
+            <h2>Country info :</h2></br></br>
+            <h2>Angola</h2>
+            <img src="flags/Angola.png" alt="Angola"><br><br>
+            <h2>Population :</h2></br>
+            <textarea id = "population" rows="1" cols="36"></textarea></br></br>
+            <h2>Area in :</h2></br>
+            <select value="Sq. Miles">
+                <option value="Sq. Miles">Sq. Miles</option>
+                <option value="Sq. KM">Sq. KM</option>
+            </select></br>
+            <textarea id = "Sq" rows="1" cols="36"></textarea>
+        </form></br>
+        <form>
+          <fieldset>
+              <h2>Population Destiny :</h2></br>
+            <input type = "radio" name="button">Per Square Mile</input></br>
+            <input type = "radio" name="button">Per Square KM</input></br>
+              <textarea id = "" rows="1" cols="36"></textarea></br>
+          </fieldset>
+        </form></br>
+        <h2>Percentage of World Population :</h2></br>
+            <textarea id = "percentage" rows="1" cols="36"></textarea></br></br>
+            <button>Wiki Country</button>
+        </form>
+    </section>
+    <script src="CountriesOfWorld.js"></script>
+</body>
